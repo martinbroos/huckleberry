@@ -9,4 +9,55 @@ body {
   padding: 0;
 }
 
+body {
+  font-size: 1rem;
+}
+
 /* Add styles here! */
+
+.max-width-wrapper {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  max-width: 400px;
+  padding: 64px 16px;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.highlighted-section {
+  padding: 64px 0;
+  border-top: 8px solid hsl(0deg, 0%, 40%);
+  background-color: hsl(0deg, 0%, 60%);
+}
+
+.card {
+  padding: 16px;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.card > *:last-child {
+  margin-bottom: 0;
+}
+
+.indented-heading {
+  display: inline-block;
+  margin: -8px 0 0 -16px;
+  padding: 16px;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+}
+
+@media screen and (min-width: 768px) {
+  .indented-heading {
+    margin-left: -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
